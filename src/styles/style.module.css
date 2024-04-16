@@ -1,0 +1,36 @@
+.buttonColor{
+    background-color: #353537;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.buttonColor:hover{
+    background-color: #262338;
+}
+
+.copyButton{
+    background-color: #262338;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -180%);
+    border: solid 5px #262338;
+    border-radius: 20px;
+    padding: 2px 20px;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+.copyButton.show{
+    visibility: visible;
+}
+
+.copyButton::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #262338 transparent transparent transparent;
+  }

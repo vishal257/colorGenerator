@@ -16,14 +16,17 @@
   }
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #262338;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "FSP DEMO - Mangueira Alt Black";
+  background: #FFFFFF;
 }
 
 @layer utilities {
